@@ -1,0 +1,18 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body.dark {
+  --text-color: #fff;
+  --bg-start-color: #000000;
+  --bg-end-color: #000000;
+}
+
+body {
+  color: var(--text-color);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--bg-end-color)
+  ) var(--bg-start-color);
+}
