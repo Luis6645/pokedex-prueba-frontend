@@ -27,7 +27,7 @@ export const DetallesPokemon: FC<Props> = ({ pokemon }) => {
                 </div>
 
                 <div className="mb-6">
-                    <div className="sm:flex inline-grid gap-2 sm:gap-[50%] ">
+                    <div className="lg:flex inline-grid gap-2 lg:gap-[50%]">
                         <TipoPokemon pokemon={pokemon} />
                         <HabilidadesPokemon pokemon={pokemon} />
                     </div>
