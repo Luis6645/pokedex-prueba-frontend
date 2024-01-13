@@ -20,12 +20,13 @@ export const ImagenesPokemon: FC<Props> = ({ pokemon }) => {
     return (
         <div className="mb-6">
             <h2 className="text-xl font-semibold mb-2">Sprites:</h2>
-            <div className="flex flex-col md:flex-row gap-4 items-center">
+
+            <div className="flex flex-wrap gap-4 items-center justify-center mx-auto">
                 {/* Imágenes de diferentes sprites del Pokémon */}
-                <img src={pokemon.sprites.front_default} alt={pokemon.name} className="w-40 h-40 rounded-md mb-2 md:mb-0" />
-                <img src={pokemon.sprites.back_default} alt={pokemon.name} className="w-40 h-40 rounded-md mb-2 md:mb-0" />
-                <img src={pokemon.sprites.front_shiny} alt={pokemon.name} className="w-40 h-40 rounded-md mb-2 md:mb-0" />
-                <img src={pokemon.sprites.back_shiny} alt={pokemon.name} className="w-40 h-40 rounded-md mb-2 md:mb-0" />
+                <img src={pokemon.sprites.front_default} alt={pokemon.name} className="w-40 h-40 rounded-md mb-2" />
+                <img src={pokemon.sprites.back_default} alt={pokemon.name} className="w-40 h-40 rounded-md mb-2" />
+                <img src={pokemon.sprites.front_shiny} alt={pokemon.name} className="w-40 h-40 rounded-md mb-2" />
+                <img src={pokemon.sprites.back_shiny} alt={pokemon.name} className="w-40 h-40 rounded-md mb-2" />
             </div>
         </div>
     );
